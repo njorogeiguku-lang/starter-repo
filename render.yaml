@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: flowforge-ai
+    runtime: node
+    plan: starter
+    rootDir: production
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: FLOWFORGE_SESSION_SECRET
+        generateValue: true
+      - key: FLOWFORGE_BILLING_SECRET
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-6-astra
+      - key: PAYSTACK_SECRET_KEY
+        sync: false
+      - key: PAYSTACK_PLAN_CODE_SOLO
+        sync: false
+      - key: PAYSTACK_PLAN_CODE_STUDIO
+        sync: false
+      - key: PAYSTACK_PLAN_CODE_AGENCY
+        sync: false
+      - key: BILLING_REQUIRED
+        value: "true"

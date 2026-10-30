@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0d"><title>Plans & trial — FlowForge AI</title>
+  <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+  <main class="page">
+    <a class="brand" href="/"><span class="mark">✳</span> flowforge<span class="ai">AI</span></a>
+    <section class="panel" aria-live="polite">
+      <p class="eyebrow">A BETTER CLIENT HANDOFF STARTS HERE</p>
+      <h1 id="heading">Choose your workspace plan</h1>
+      <p class="lede" id="lede">Choose a 30-day card trial that renews monthly, or pay directly from your bank for 30 days with no automatic renewal.</p>
+      <label class="consent" id="consent-wrap"><input type="checkbox" id="billing-consent"><span>I authorize a refundable KES 3 card verification and the selected monthly plan to begin after the 30-day trial. I can cancel before the first monthly debit.</span></label>
+      <div id="message" class="message" hidden></div>
+      <div id="plans" class="plans"><div class="loading">Loading plans…</div></div>
+      <div id="trial-status" hidden></div>
+      <p class="terms">Card trial: the KES 3 verification is submitted for refund; your monthly card subscription is scheduled after 30 days. Bank payment: Paystack Checkout supports Kenyan Pay with Bank (PesaLink); successful payment buys 30 days and does not renew automatically. FlowForge never handles bank login details, card numbers, or CVV. Paystack must have Bank transfer enabled in Dashboard preferences.</p>
+      <div class="footer"><a href="/login">Sign in or create an account</a><a href="/">Back to FlowForge</a></div>
+    </section>
+    <p class="disclaimer">Payments are processed securely by Paystack. Plan prices are configured in KES. Foreign card conversion depends on the customer’s bank and Paystack.</p>
+  </main>
+  <script src="billing.js"></script>
+</body>
+</html>

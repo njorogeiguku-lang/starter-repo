@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <title>Sign in · FlowForge AI</title>
+  <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <a class="brand" href="/" aria-label="FlowForge AI"><span class="brand-mark">✳</span> flowforge<span class="brand-ai">AI</span></a>
+    <section class="auth-card" aria-labelledby="auth-heading">
+      <p class="eyebrow">AGENCY WORK, IN FLOW</p>
+      <h1 id="auth-heading">Welcome back.</h1>
+      <p id="auth-intro" class="intro">Sign in to your secure workspace.</p>
+      <form id="auth-form" novalidate>
+        <div class="field" id="workspace-field" hidden>
+          <label for="workspace-name">Workspace name</label>
+          <input id="workspace-name" name="workspaceName" autocomplete="organization" maxlength="80" placeholder="Your agency">
+        </div>
+        <div class="field" id="email-field">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@agency.com">
+        </div>
+        <div class="field" id="password-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" minlength="12" maxlength="1024" placeholder="At least 12 characters">
+        </div>
+        <p id="auth-message" class="auth-message" role="status" aria-live="polite"></p>
+        <button id="submit-auth" class="primary-button" type="submit">Sign in</button>
+      </form>
+      <button id="forgot-password" class="text-button" type="button">Forgot password?</button>
+      <div class="auth-divider"><span>NEW TO FLOWFORGE?</span></div>
+      <button id="toggle-mode" class="secondary-button" type="button">Create an account</button>
+    </section>
+    <p class="auth-footnote">Drafts are saved to your private workspace. Only use client information your organization has approved for this service.</p>
+  </main>
+  <script src="/login.js" defer></script>
+</body>
+</html>

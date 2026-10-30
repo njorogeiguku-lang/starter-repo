@@ -18,4 +18,3 @@ The production app is not deployed yet. It needs your GitHub, Supabase, and Rend
 This is a production-oriented foundation, not a compliance certification or a fully verified commercial service. Paystack subscriptions and the 30-day card-backed trial are implemented but require an approved merchant account, production plans, private secret configuration, and end-to-end sandbox verification before live use. Team invitations, enterprise SSO, formal privacy/legal documents, and independent security review are still required before handling sensitive client records. Each account gets its own workspace; team sharing is not implemented yet. OpenAI drafting uses `store: false`, which is not a zero-retention guarantee.
 
 See [PRODUCT_PLAN.md](PRODUCT_PLAN.md) for the product and revenue plan.
-
